@@ -9,6 +9,11 @@ form.addEventListener('submit', async function (e){
         {q: userSearch,
          appid: key,   
         }}
-    const res = await axios.get('api.openweathermap.org/data/2.5/weather', details)
+    try {
+        const res = await axios.get('https://api.openweathermap.org/data/2.5/weather', details)
     console.dir(res);
+    } catch (e) {
+        console.log(e);
+    }   
+    
 });
