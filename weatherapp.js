@@ -1,7 +1,5 @@
-let key = config.appid;
-
+const key = config.appid;
 const form = document.querySelector('#citySearch');
-const list = document.querySelector('#weather');
 const cityHeader = document.querySelector('#cityHeader');
 const tempList = document.querySelector('#temp')
 
