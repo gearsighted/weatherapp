@@ -23,7 +23,7 @@ form.addEventListener('submit', async function (e){
         cityHeader.innerText = `Here is the weather in ${userSearch}`
         tempList.innerText = `The temperature is ${tempData} degrees celcius.`
         weatherList.innerText = `The current condition is ${weatherData}.`
-        humidityList.innerText = `The current humdity is ${humidityData} percent.`
+        humidityList.innerText = `The current humdity is ${humidityData}%.`
 
         console.log(res.data)
     } catch (e) {
